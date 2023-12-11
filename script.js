@@ -1,4 +1,4 @@
-let binary = "1011011101111"
+let binary = "1011010001011111110101110100010001000111111"
 
 
 // console.log(convertBinaryToDecimal(binary))
