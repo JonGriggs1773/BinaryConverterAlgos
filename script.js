@@ -1,5 +1,5 @@
-let binary = "1011010001011111110101110100010001000111111"
-
+let binary = "1111111110010"
+let decimal = "2304"
 
 // console.log(convertBinaryToDecimal(binary))
 
@@ -16,4 +16,24 @@ const convertBinaryToDecimal = num => {
 }
 
 
-console.log(convertBinaryToDecimal(binary))
+// console.log(convertBinaryToDecimal(binary))
+
+const convertDecimalToBinary = num => {
+    let binaryNum = ""
+    let numToReverse = ""
+    while(num >= 1) {
+        if(num % 2 != 0) {
+            numToReverse += "1"
+        }
+        else {
+            numToReverse += "0"
+        }
+        num = parseInt(num / 2)
+    }
+    for(let i = numToReverse.length - 1; i >= 0; i--) {
+        binaryNum += numToReverse[i]
+    }
+    return binaryNum
+}
+
+console.log(convertDecimalToBinary(decimal))
