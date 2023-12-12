@@ -1,5 +1,5 @@
-let binary = "1111111110010"
-let decimal = "2304"
+let binary = "10000001101000111000"
+let decimal = "531000"
 
 // console.log(convertBinaryToDecimal(binary))
 
@@ -16,7 +16,7 @@ const convertBinaryToDecimal = num => {
 }
 
 
-// console.log(convertBinaryToDecimal(binary))
+console.log(convertBinaryToDecimal(binary))
 
 const convertDecimalToBinary = num => {
     let binaryNum = ""
@@ -36,4 +36,4 @@ const convertDecimalToBinary = num => {
     return binaryNum
 }
 
-console.log(convertDecimalToBinary(decimal))
+// console.log(convertDecimalToBinary(decimal))
